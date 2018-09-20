@@ -5,14 +5,11 @@ use Symfony\Component\Console\Application;
 
 foreach (array(__DIR__.'/../../autoload.php', __DIR__.'/../vendor/autoload.php', __DIR__.'/vendor/autoload.php') as $file) {
     if (file_exists($file)) {
-        define('COMPOSER_INSTALL', $file);
-
+        require_once $file;
         break;
     }
 }
 
-
-require_once COMPOSER_INSTALL;
 
 $app = new Application('yaml-diff-tool');
 
