@@ -1,0 +1,27 @@
+{
+  "name": "jandc/yaml-diff-tool",
+  "description": "Simple tool that extracts missing/superfluous keys from a yaml file",
+  "type": "application",
+  "require": {
+    "symfony/yaml": "^4.1",
+    "symfony/console": "^4.1",
+    "ext-Phar": "^2.0",
+    "php": ">=7.1.0",
+    "phpunit/phpunit": "^7.3"
+  },
+  "license": "ISC",
+  "autoload": {
+    "psr-4": {
+      "YamlDiffTool\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Jan Decavele",
+      "email": "jandecavele@gmail.com"
+    }
+  ],
+  "bin": [
+    "bin/"
+  ]
+}

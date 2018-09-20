@@ -1,0 +1,7 @@
+root:
+  element1: foo
+  element2: bar
+otherroot:
+  element4: foos
+  element2: []
+  element5: bas

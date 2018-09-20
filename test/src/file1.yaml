@@ -1,0 +1,13 @@
+root:
+  element1: foo
+  element2: bar
+otherroot:
+  element4: foos
+  element5: bas
+  element1: foo again
+  element2:
+    test: "test"
+    tester: "tester"
+test:
+  key: {foo: baar, schaap: be}
+

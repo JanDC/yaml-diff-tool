@@ -1,0 +1,14 @@
+#!/usr/bin/env php
+<?php
+
+use Symfony\Component\Console\Application;
+
+require_once __DIR__.'/../vendor/autoload.php';
+
+$app = new Application('yaml-diff-tool');
+
+$app->add(new \YamlDiffTool\Command\YamlDiffCommand());
+$app->setDefaultCommand('yaml-diff-tool:run', true);
+
+
+return $app->doRun(new Symfony\Component\Console\Input\ArgvInput(), new Symfony\Component\Console\Output\ConsoleOutput());
